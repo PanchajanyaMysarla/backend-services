@@ -1,0 +1,9 @@
+server:
+  port: 8085
+db:
+  connection: default connection
+  port: 4200
+
+spring:
+  profiles:
+    active: TEST

@@ -1,0 +1,5 @@
+
+
+movie catalog service
+movie info service
+movie ratings service

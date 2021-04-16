@@ -1,0 +1,11 @@
+server:
+  port: 8087
+db:
+  connection: default connection
+  port: 4200
+
+spring:
+  profiles:
+    active: TEST
+
+spring-cloud.config.uri: http://localhost:8086
