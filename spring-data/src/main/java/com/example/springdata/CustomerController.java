@@ -42,14 +42,11 @@ public class CustomerController {
                                                 @RequestParam(defaultValue = "10") Integer size,
                                                 @RequestParam(defaultValue = "name") String sortField,
                                                 @RequestParam(defaultValue = "asc") String sortDirection){
-
         PageRequest pageRequest = PageRequest.of(
                 page,
                 size,
                 sortDirection.equalsIgnoreCase("asc") ? Sort.by(sortField).ascending() : Sort.by(sortField).descending()
         );
-
-
        return customerPagingRepository.findAll(pageRequest);
 
     }

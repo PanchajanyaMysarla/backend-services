@@ -21,7 +21,7 @@ public class Customer {
     @Formula("id * 10")
     private Long customerId;
 
-    @Formula("case when start_date <= CURRENT_TIMESTAMP() and end_date >= CURRENT_TIMESTAMP() then 'Active' else 'Inactive' end")
+    @Formula("case when start_date <= current_timestamp() and end_date >= CURRENT_TIMESTAMP() then 'Active' else 'Inactive' end")
     private String status;
 
     @Formula("case when start_date <= CURRENT_TIMESTAMP() and end_date >= CURRENT_TIMESTAMP() then 0 else 1 end")
